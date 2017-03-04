@@ -11,5 +11,5 @@ unzip ngrok.zip
 {
     echo "Executing ngrok"
     ./ngrok authtoken $NGROK_TOKEN
-    ./ngrok tcp 8888 --log=stdout --log-level=debug | grep "tcp.ngrok.io" || true
-} &
+    ./ngrok tcp 8888 --log=stdout --log-level=debug
+}
