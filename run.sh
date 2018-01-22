@@ -11,3 +11,4 @@ unzip ngrok.zip
     ./ngrok authtoken $NGROK_TOKEN
     ./ngrok tcp 8888 --log=stdout --log-level=debug
 } &
+sleep 10m
