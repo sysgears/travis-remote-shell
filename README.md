@@ -10,7 +10,7 @@ Create a new branch and add the following lines to your `.travis.xml`:
 ```
 env: NGROK_TOKEN=*your ngrok token*
 before_install:
-  - eval "$(curl -sL https://raw.github.com/fniephaus/travis-remote-shell/master/run.sh)"
+  - eval "$(curl -sL https://raw.githubusercontent.com/sysgears/travis-remote-shell/master/run.sh)"
 ```
 
 Search your Travis-CI log for a line like [this](https://travis-ci.org/fniephaus/travis-remote-shell#L130) and determine the port:
